@@ -3,11 +3,13 @@
 	import face from '$lib/assets/face.avif';
 </script>
 
-<article id="hero" class="relative bg-blue px-6 pt-36">
-	<div class="mw flex items-end justify-between gap-6 py-12 text-white">
-		<div class="flex max-w-175 flex-col items-start gap-6">
-			<h1 class="md:text-8xl">¿Necesitas más <span class="text-yellow">clientes</span>?</h1>
-			<div class="text-balance md:text-xl">
+<article id="hero" class="relative bg-blue px-6 pt-18 md:pt-36">
+	<div class="mw flex justify-between gap-6 py-12 text-white md:items-end">
+		<div class="flex max-w-175 flex-col gap-4 sm:gap-6 md:items-start">
+			<h1 class="text-5xl md:text-8xl">
+				¿Necesitas más <span class="text-yellow">clientes</span>?
+			</h1>
+			<div class="text-lg text-balance md:text-xl">
 				<p>
 					Te construimos un sistema de adquisición automatizado que atrae, filtra y califica
 					prospectos listos para comprar.
@@ -17,14 +19,19 @@
 				</p>
 			</div>
 			<a href="/#how" class="btn btn-white group md:text-lg">
-				<span>Descubre cómo opera el sistema</span>
+				<span>Descubre cómo aquí</span>
 				<ArrowUpRight
 					class="size-4 transition duration-500 group-hover:rotate-45 md:size-5"
 					strokeWidth={3}
 				/>
 			</a>
 		</div>
-		<img src={face} alt="Ilustración de un rostro triste." width="300" />
+		<img
+			src={face}
+			class="hidden w-75 md:block"
+			alt="Ilustración de un rostro triste."
+			width="300"
+		/>
 	</div>
 	<a
 		href="#cards"

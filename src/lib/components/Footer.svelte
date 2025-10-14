@@ -6,8 +6,8 @@
 
 <footer class="border-t-4 border-white bg-black px-6 text-white">
 	<div class="mw">
-		<div class="relative flex justify-between gap-6 py-12">
-			<section class="flex flex-col gap-4">
+		<div class="relative flex flex-col justify-between gap-10 py-12 md:flex-row md:gap-6">
+			<section class="order-2 flex flex-col gap-4 md:order-1">
 				<h2 class="text-2xl leading-none font-extrabold">Mapa del Sitio</h2>
 				<nav class="flex flex-col gap-2">
 					<Link text="Inicio" href="/" />
@@ -20,10 +20,10 @@
 			<img
 				src={footer}
 				alt="Logo vertical de Vozeo"
-				class="absolute top-1/2 left-1/2 -translate-1/2"
+				class="top-1/2 left-1/2 order-1 mx-auto w-[70%] shrink-0 md:absolute md:order-[unset] md:w-[209px] md:-translate-1/2"
 				width="209"
 			/>
-			<div class="flex flex-col gap-10">
+			<div class="order-3 flex flex-col gap-10 md:order-2">
 				<section class="flex flex-col gap-4">
 					<h2 class="text-2xl leading-none font-extrabold">Conversemos</h2>
 					<nav class="flex flex-col gap-2">
