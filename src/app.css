@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans:
+		'Raleway', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol', 'Noto Color Emoji';
+	--color-blue: #3440ff;
+	--color-yellow: #f0cd08;
+	--color-cream: #fff6e1;
+	--color-black: #2b2b2b;
+}
+
+@layer base {
+	:root {
+		font-optical-sizing: auto;
+		font-style: normal;
+		font-weight: 600;
+		scroll-behavior: smooth;
+		color: var(--color-black);
+	}
+
+	h1 {
+		@apply text-4xl leading-none font-black tracking-tight text-balance sm:text-5xl md:text-6xl;
+	}
+}
+
+@layer utilities {
+	.mw {
+		@apply mx-auto max-w-300;
+	}
+	.btn {
+		@apply relative flex items-center justify-center gap-2 overflow-hidden rounded-full px-5 py-3 leading-none font-extrabold active:scale-95;
+	}
+	.btn > svg,
+	.btn > span {
+		@apply relative z-1;
+	}
+	/* .btn-yellow {
+		@apply bg-light-yellow text-black before:bg-yellow;
+	}
+	.btn-blue {
+		@apply bg-light-blue text-white before:bg-blue;
+	}
+	.btn-red {
+		@apply bg-light-red before:bg-red text-white;
+	} */
+	.btn-white {
+		@apply bg-yellow text-blue before:bg-white;
+	}
+	.btn::before {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		z-index: 0;
+		content: '';
+		width: 120%;
+		left: -10%;
+		transform: skew(30deg);
+		transition: transform 0.5s cubic-bezier(0.3, 1, 0.8, 1);
+	}
+	.btn:hover::before {
+		transform: skew(30deg) translate3d(50%, 0, 0);
+	}
+	.btn:disabled::before {
+		transform: none;
+	}
+}
+
+@layer components {
+}
