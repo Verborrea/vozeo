@@ -1,12 +1,15 @@
 <script>
 	import { ArrowDown, ArrowUpRight } from 'lucide-svelte';
-	import face from '$lib/assets/face.avif';
+	import desktop from '$lib/assets/hero-desktop.webp';
+	import mobile from '$lib/assets/hero-mobile.webp';
 </script>
 
-<article id="hero" class="relative bg-blue px-6 pt-18 md:pt-36">
-	<div class="mw flex justify-between gap-6 py-12 text-white md:items-end">
+<article id="hero" class="relative bg-blue px-6 pt-10 md:pt-24">
+	<div
+		class="mw flex flex-col-reverse justify-between gap-6 py-12 text-white md:flex-row md:items-end"
+	>
 		<div class="flex max-w-175 flex-col gap-4 sm:gap-6 md:items-start">
-			<h1 class="text-5xl md:text-8xl">
+			<h1 class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
 				¿Necesitas más <span class="text-yellow">clientes</span>?
 			</h1>
 			<div class="text-lg text-balance md:text-xl">
@@ -26,12 +29,15 @@
 				/>
 			</a>
 		</div>
-		<img
-			src={face}
-			class="hidden w-75 md:block"
-			alt="Ilustración de un rostro triste."
-			width="300"
-		/>
+		<picture>
+			<source srcset={mobile} media="(max-width: 768px)" />
+			<source srcset={desktop} media="(min-width: 769px)" />
+			<img
+				src={desktop}
+				alt="Ilustración vectorial alusiva al marketing y la publicidad adaptativa"
+				class="w-full md:w-[467px]"
+			/>
+		</picture>
 	</div>
 	<a
 		href="#cards"

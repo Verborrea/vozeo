@@ -5,19 +5,19 @@
 <article class="bg-black px-6 py-12 text-white md:py-24">
 	<div class="mw flex flex-col items-center justify-between gap-6 md:flex-row">
 		<h1 class="max-w-125 text-yellow">
-			¿realmente quieres <span class="text-white">duplicar</span> tu inversión?
+			¿realmente quieres <em>duplicar</em> tu inversión?
 		</h1>
 		<div class="flex max-w-125 flex-col gap-6">
 			<div class="space-y-4">
-				<h2 class="text-3xl font-extrabold text-balance">
-					Agenda una breve llamada de diagnóstico.
+				<h2 class="text-end text-3xl font-extrabold text-balance md:text-start">
+					Agenda una breve cita de diagnóstico.
 				</h2>
 				<p class="text-lg text-white/50">
-					En 15 minutos te mostramos cómo podrías duplicar tus oportunidades sin aumentar tu
-					presupuesto.
+					En <strong class="font-extrabold text-yellow">15 minutos</strong> te mostramos cómo podrías
+					duplicar tus oportunidades sin aumentar tu presupuesto.
 				</p>
 			</div>
-			<div class="flex flex-col gap-4 md:flex-row md:items-center">
+			<div class="flex flex-col gap-3 md:flex-row md:items-center md:gap-4">
 				<a
 					href="https://wa.me/51901776738?text={encodeURI(
 						'Hola, estoy interesado en sus servicios.'

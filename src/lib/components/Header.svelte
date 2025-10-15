@@ -15,6 +15,12 @@
 		{ text: 'Contáctanos', href: '/' }
 	];
 
+	const mobileLinks = [
+		...links,
+		{ text: 'WhatsApp', href: '/', target: '_blank', rel: 'noopener noreferrer' },
+		{ text: 'Agenda una cita', href: '/', target: '_blank', rel: 'noopener noreferrer' }
+	];
+
 	function onScroll() {
 		const current = window.scrollY;
 		const diff = current - lastScroll;
@@ -48,7 +54,7 @@
 	class:translate-y-[-100%]={hidden}
 >
 	<div class="mw flex items-center justify-between gap-6">
-		<a href="/"> <img src={logo} alt="Logo de Vozeo" width="184" /></a>
+		<a href="/"> <img src={logo} alt="Logo de Vozeo" width="184" class="w-35 md:w-46" /></a>
 		<nav class="hidden items-center gap-8 sm:flex">
 			{#each links as link}
 				<Link {...link} />
@@ -56,14 +62,14 @@
 		</nav>
 		<button
 			type="button"
-			class="flex cursor-pointer flex-col gap-1 py-2.5 sm:hidden"
+			class="flex cursor-pointer flex-col gap-[5px] py-2.5 sm:hidden"
 			aria-label="Menú"
 			class:opened
 			{onclick}
 		>
-			<div id="bb1" class="h-[4px] w-7 rounded-full bg-white transition"></div>
-			<div id="bb2" class="h-[4px] w-7 rounded-full bg-white transition"></div>
-			<div id="bb3" class="h-[4px] w-7 rounded-full bg-white transition"></div>
+			<div id="bb1" class="h-[3.5px] w-7 bg-white transition"></div>
+			<div id="bb2" class="h-[3.5px] w-7 -rotate-5 bg-white transition"></div>
+			<div id="bb3" class="h-[3.5px] w-7 bg-white transition"></div>
 		</button>
 	</div>
 </header>
@@ -72,13 +78,13 @@
 	<nav
 		in:fly={{ y: '-100svh', duration: 400, opacity: 1 }}
 		out:fly={{ y: '-100svh', duration: 400, opacity: 1, delay: 300 }}
-		class="mobile-nav fixed top-0 right-0 left-0 z-15 flex min-h-[100svh] flex-col justify-end gap-6 bg-blue p-5.5 text-white sm:hidden"
+		class="mobile-nav fixed top-0 right-0 left-0 z-15 flex min-h-[100svh] flex-col justify-end gap-6 bg-blue p-6 py-8 text-white sm:hidden"
 	>
-		{#each links as link, index}
+		{#each mobileLinks as link, index}
 			<a
 				{onclick}
 				class="text-3xl font-extrabold"
-				href={link.href}
+				{...link}
 				in:fly|global={{ y: -20, duration: 400, opacity: 0, delay: index * 35 + 250 }}
 				out:fly|global={{
 					y: -20,
@@ -89,26 +95,19 @@
 				aria-current={page.url.pathname === link.href}>{link.text}</a
 			>
 		{/each}
-		<!-- <a
-			{onclick}
-			in:fly|global={{ y: -20, duration: 400, opacity: 0, delay: links.length * 35 + 250 }}
-			out:fly|global={{ y: -20, duration: 200, opacity: 0, delay: 0 }}
-			class="rounded-[16px] bg-yellow p-5.5 text-center text-[28px] leading-none font-bold tracking-tighter shadow-none"
-			href="/"><div class="w-full">Dona Ya!</div></a
-		> -->
 	</nav>
 {/if}
 
 <style>
 	.opened > #bb1 {
-		transform: translateY(8px) rotate(-45deg);
+		transform: translateY(8.5px) rotate(-45deg);
 	}
 	.opened > #bb2 {
 		opacity: 0;
-		transform: scaleX(1.5);
+		transform: rotate(-85deg);
 	}
 	.opened > #bb3 {
-		transform: translateY(-8px) rotate(45deg);
+		transform: translateY(-8.5px) rotate(45deg);
 	}
 	.opened > * {
 		fill: white;

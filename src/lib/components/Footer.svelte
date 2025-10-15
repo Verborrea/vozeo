@@ -39,7 +39,7 @@
 				</section>
 				<section class="flex flex-col gap-4">
 					<h2 class="text-2xl leading-none font-extrabold">Síguenos en</h2>
-					<nav class="flex items-center gap-6 text-white">
+					<nav class="flex justify-center gap-8 text-white md:justify-start md:gap-6">
 						<a
 							href="https://wa.me/51901776738?text={encodeURI(
 								'Hola, estoy interesado en sus servicios.'
