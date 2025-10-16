@@ -12,15 +12,15 @@
 				<nav class="flex flex-col gap-2">
 					<Link text="Inicio" href="/" />
 					<Link text="¿Qué te ofrecemos?" href="/" />
-					<Link text="Te guiamos" href="/" />
-					<Link text="Nuestra Metodología" href="/" />
-					<Link text="Testimonios" href="/" />
+					<Link text="Te guiamos" href="/#guiamos" />
+					<Link text="Nuestra Metodología" href="/#how" />
+					<Link text="Clientes" href="/#clientes" />
 				</nav>
 			</section>
 			<img
 				src={footer}
 				alt="Logo vertical de Vozeo"
-				class="top-1/2 left-1/2 order-1 mx-auto w-[60%] shrink-0 md:absolute md:order-[unset] md:w-[209px] md:-translate-1/2"
+				class="top-1/2 left-1/2 order-1 mx-auto w-[50%] shrink-0 md:absolute md:order-[unset] md:w-[209px] md:-translate-1/2"
 				width="209"
 			/>
 			<div class="order-3 flex flex-col gap-10 md:order-2">
@@ -39,7 +39,7 @@
 				</section>
 				<section class="flex flex-col gap-4">
 					<h2 class="text-2xl leading-none font-extrabold">Síguenos en</h2>
-					<nav class="flex justify-center gap-8 text-white md:justify-start md:gap-6">
+					<nav class="flex gap-8 text-white md:justify-start md:gap-6">
 						<a
 							href="https://wa.me/51901776738?text={encodeURI(
 								'Hola, estoy interesado en sus servicios.'
