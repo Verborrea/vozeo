@@ -1,10 +1,12 @@
 <script>
 	import { ArrowDown, ArrowUpRight } from 'lucide-svelte';
-	import desktop from '$lib/assets/hero-desktop.webp';
-	import mobile from '$lib/assets/hero-mobile.webp';
+	import desktop from '$lib/assets/hero.webp';
 </script>
 
-<article id="hero" class="relative bg-blue px-6 pt-10 md:pt-24">
+<article
+	id="hero"
+	class="relative min-h-[80vh] content-end bg-blue px-6 pt-10 md:min-h-[unset] md:pt-24"
+>
 	<div
 		class="mw flex flex-col-reverse justify-between gap-6 py-12 text-white md:flex-row md:items-end"
 	>
@@ -29,15 +31,11 @@
 				/>
 			</a>
 		</div>
-		<picture>
-			<source srcset={mobile} media="(max-width: 768px)" />
-			<source srcset={desktop} media="(min-width: 769px)" />
-			<img
-				src={desktop}
-				alt="Ilustración vectorial alusiva al marketing y la publicidad adaptativa"
-				class="w-full md:w-[467px]"
-			/>
-		</picture>
+		<img
+			src={desktop}
+			alt="Ilustración vectorial alusiva al marketing y la publicidad adaptativa"
+			class="hidden w-full md:block md:w-[467px]"
+		/>
 	</div>
 	<a
 		href="#cards"

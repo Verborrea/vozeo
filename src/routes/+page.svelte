@@ -1,7 +1,10 @@
 <script>
+	import Clientes from './Clientes.svelte';
 	import Demanda from './Demanda.svelte';
+	import Guiemos from './Guiemos.svelte';
 	import Hero from './Hero.svelte';
 	import How from './How.svelte';
+	import Steps from './Steps.svelte';
 	import SubFooter from './SubFooter.svelte';
 </script>
 
@@ -16,6 +19,9 @@
 <main>
 	<Hero />
 	<Demanda />
+	<Steps />
+	<Guiemos />
 	<How />
+	<Clientes />
 	<SubFooter />
 </main>

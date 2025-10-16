@@ -5,7 +5,7 @@
 
 <article id="how" class="flex flex-col gap-12 py-12 md:py-32">
 	<div class="px-6">
-		<h1 class="mw text-center text-5xl">¿cómo lo hacemos?</h1>
+		<h1 class="mw text-center text-4xl md:text-6xl">¿cómo lo hacemos?</h1>
 	</div>
 	<picture>
 		<source srcset={mobile} media="(max-width: 768px)" />

@@ -54,7 +54,7 @@
 	class:translate-y-[-100%]={hidden}
 >
 	<div class="mw flex items-center justify-between gap-6">
-		<a href="/"> <img src={logo} alt="Logo de Vozeo" width="184" class="w-35 md:w-46" /></a>
+		<a href="/"> <img src={logo} alt="Logo de Vozeo" width="184" class="w-34 md:w-46" /></a>
 		<nav class="hidden items-center gap-8 sm:flex">
 			{#each links as link}
 				<Link {...link} />
@@ -68,7 +68,7 @@
 			{onclick}
 		>
 			<div id="bb1" class="h-[3.5px] w-7 bg-white transition"></div>
-			<div id="bb2" class="h-[3.5px] w-7 -rotate-5 bg-white transition"></div>
+			<div id="bb2" class="h-[3.5px] w-7 -rotate-7 -skew-x-7 bg-white transition"></div>
 			<div id="bb3" class="h-[3.5px] w-7 bg-white transition"></div>
 		</button>
 	</div>

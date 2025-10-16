@@ -20,7 +20,7 @@
 			<img
 				src={footer}
 				alt="Logo vertical de Vozeo"
-				class="top-1/2 left-1/2 order-1 mx-auto w-[70%] shrink-0 md:absolute md:order-[unset] md:w-[209px] md:-translate-1/2"
+				class="top-1/2 left-1/2 order-1 mx-auto w-[60%] shrink-0 md:absolute md:order-[unset] md:w-[209px] md:-translate-1/2"
 				width="209"
 			/>
 			<div class="order-3 flex flex-col gap-10 md:order-2">
