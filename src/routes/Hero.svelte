@@ -5,7 +5,7 @@
 
 <article
 	id="hero"
-	class="relative min-h-[80vh] content-end bg-blue px-6 pt-10 md:min-h-[unset] md:pt-24"
+	class="relative min-h-[80vh] content-end bg-blue px-6 pt-10 md:min-h-[unset] md:pt-32"
 >
 	<div
 		class="mw flex flex-col-reverse justify-between gap-6 py-12 text-white md:flex-row md:items-end"
@@ -34,7 +34,7 @@
 		<img
 			src={desktop}
 			alt="Ilustración vectorial alusiva al marketing y la publicidad adaptativa"
-			class="hidden w-full md:block md:w-[467px]"
+			class="hidden w-full md:block md:w-[400px]"
 		/>
 	</div>
 	<a

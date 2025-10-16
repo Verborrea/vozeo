@@ -46,9 +46,11 @@
 		<section class="grid gap-6 sm:grid-cols-2 md:gap-12 lg:grid-cols-3">
 			{#each steps as step}
 				<article
-					class="relative flex flex-col items-start gap-4 overflow-hidden rounded-2xl bg-black px-6 py-8 text-white"
+					class="group relative flex flex-col items-start gap-4 overflow-hidden rounded-2xl bg-black px-6 py-8 text-white"
 				>
-					<div class="absolute top-0 left-full size-54 -translate-1/2 rounded-full bg-orange"></div>
+					<div
+						class="absolute top-0 left-full size-54 -translate-1/2 rounded-full bg-orange transition-all group-hover:size-64"
+					></div>
 					<img src={step.img} alt={step.name} class="relative h-32 object-contain" />
 					<h1 class="relative text-2xl font-extrabold">{step.name}</h1>
 					<p class="relative">{step.text}</p>

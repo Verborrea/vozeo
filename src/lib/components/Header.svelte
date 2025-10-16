@@ -9,16 +9,24 @@
 	let opened = $state(false);
 
 	const links = [
-		{ text: 'Inicio', href: '/' },
-		{ text: 'La agencia', href: '/' },
-		{ text: 'Método', href: '/' },
-		{ text: 'Contáctanos', href: '/' }
+		{ text: 'Inicio', href: '/', external: false },
+		{ text: 'La agencia', href: '/nosotros', external: false },
+		{ text: 'Método', href: '/metodo', external: false },
+		{ text: 'Contáctanos', href: 'contacto/', external: false }
 	];
 
 	const mobileLinks = [
 		...links,
-		{ text: 'WhatsApp', href: '/', target: '_blank', rel: 'noopener noreferrer' },
-		{ text: 'Agenda una cita', href: '/', target: '_blank', rel: 'noopener noreferrer' }
+		{
+			text: 'WhatsApp',
+			href: 'https://wa.me/51901776738',
+			external: true
+		},
+		{
+			text: 'Agenda una cita',
+			href: 'https://calendar.app.google/A1EYghs3JTvTm4pZ6',
+			external: true
+		}
 	];
 
 	function onScroll() {
@@ -35,7 +43,7 @@
 		}
 	}
 
-	function onclick() {
+	const onclick = () => {
 		opened = !opened;
 		if (opened) {
 			document.documentElement.style.overflow = 'hidden';
@@ -44,7 +52,7 @@
 			document.documentElement.style.overflow = '';
 			document.body.style.overflow = '';
 		}
-	}
+	};
 </script>
 
 <svelte:window onscroll={onScroll} />
@@ -84,7 +92,9 @@
 			<a
 				{onclick}
 				class="text-3xl font-extrabold"
-				{...link}
+				href={link.href}
+				target={link.external ? '_blank' : null}
+				rel={link.external ? 'noopener noreferrer' : null}
 				in:fly|global={{ y: -20, duration: 400, opacity: 0, delay: index * 35 + 250 }}
 				out:fly|global={{
 					y: -20,
