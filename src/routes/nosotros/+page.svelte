@@ -19,6 +19,14 @@
 	import Numbers from './Numbers.svelte';
 </script>
 
+<svelte:head>
+	<title>La Agencia | Vozeo</title>
+	<meta
+		name="description"
+		content="Automatizamos tu proceso comercial con Paid Media, Estrategia, WhatsApp y CRM. Más leads, menos esfuerzo, todo medible."
+	/>
+</svelte:head>
+
 <main>
 	<article id="hero" class="min-h-[80vh] content-end bg-cream px-6 pt-10 md:min-h-[unset] md:pt-32">
 		<div class="mw flex flex-col-reverse justify-between gap-6 py-12 md:flex-row md:items-end">
