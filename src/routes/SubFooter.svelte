@@ -2,7 +2,7 @@
 	import { CalendarDays } from 'lucide-svelte';
 </script>
 
-<article class="bg-black px-6 py-12 text-white md:py-24">
+<article class="bg-blue px-6 py-12 text-white md:py-24">
 	<div class="mw flex flex-col items-center justify-between gap-6 md:flex-row">
 		<h1 class="max-w-125 text-yellow">
 			¿realmente quieres <em>duplicar</em> tu inversión?

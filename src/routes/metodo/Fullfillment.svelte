@@ -2,7 +2,7 @@
 	import fourth from '$lib/assets/metodo/fourth.avif';
 </script>
 
-<article class="bg-black px-6 py-12 text-white md:py-24">
+<article class="bg-blue px-6 py-12 text-white md:py-24">
 	<div class="mw grid items-center gap-6 md:grid-cols-2 md:gap-12">
 		<section class="mw flex flex-col gap-4 text-lg md:gap-6 md:text-xl">
 			<h1 class="text-blue sm:text-4xl md:text-5xl"><em>Fullfilment</em> y escalado + Retención</h1>

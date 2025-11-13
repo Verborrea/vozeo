@@ -2,7 +2,7 @@
 	import { ArrowRight } from 'lucide-svelte';
 </script>
 
-<article id="guiamos" class="bg-black px-6 py-12 text-white md:py-32">
+<article id="guiamos" class="bg-blue px-6 py-12 text-white md:py-32">
 	<div class="mw flex flex-col gap-6 md:gap-12">
 		<h1 class="text-center text-4xl md:text-6xl">¿prefieres que te guiemos?</h1>
 		<h2 class="text-center text-3xl font-extrabold text-balance text-[#565FF4]">

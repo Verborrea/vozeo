@@ -4,10 +4,10 @@
 	--font-sans:
 		'Raleway', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
 		'Segoe UI Symbol', 'Noto Color Emoji';
-	--color-blue: #3440ff;
-	--color-yellow: #f0cd08;
-	--color-orange: #f2b948;
-	--color-cream: #fff6e1;
+	--color-blue: #0d1b2a;
+	--color-yellow: #ffd439;
+	--color-orange: #dba436;
+	--color-cream: #e0e1dd;
 	--color-black: #2b2b2b;
 }
 
@@ -17,7 +17,7 @@
 		font-style: normal;
 		font-weight: 600;
 		scroll-behavior: smooth;
-		color: var(--color-black);
+		color: var(--color-blue);
 	}
 
 	h1 {
@@ -39,17 +39,11 @@
 	.btn > svg {
 		@apply shrink-0;
 	}
-	/* .btn-yellow {
-		@apply bg-light-yellow text-black before:bg-yellow;
-	}
-	.btn-blue {
-		@apply bg-light-blue text-white before:bg-blue;
-	}
-	.btn-red {
-		@apply bg-light-red before:bg-red text-white;
-	} */
 	.btn-white {
 		@apply bg-yellow text-blue before:bg-white;
+	}
+	.btn-yellow {
+		@apply bg-orange text-blue before:bg-yellow;
 	}
 	.btn::before {
 		position: absolute;
@@ -71,4 +65,19 @@
 }
 
 @layer components {
+	.tag {
+		@apply rounded-lg px-2 py-1 text-xs font-bold;
+	}
+	.tag-blue {
+		@apply bg-blue-500 text-white;
+	}
+	.tag-pink {
+		@apply bg-pink-500 text-white;
+	}
+	.tag-gold {
+		@apply bg-orange text-white;
+	}
+	.tag-disabled {
+		@apply bg-slate-200 text-slate-400 line-through;
+	}
 }

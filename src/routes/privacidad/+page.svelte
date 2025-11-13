@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Política de Privacidad</title>
+</svelte:head>
+
 <main class="px-6">
 	<article class="mw pt-36 pb-16">
 		<div class="flex max-w-2xl flex-col items-start gap-8">

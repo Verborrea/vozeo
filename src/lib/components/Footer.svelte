@@ -4,7 +4,7 @@
 	import { PhoneCall, SendHorizontal } from 'lucide-svelte';
 </script>
 
-<footer class="border-t-4 border-white bg-black px-6 text-white">
+<footer class="border-t-4 border-white bg-blue px-6 text-white">
 	<div class="mw">
 		<div class="relative flex flex-col justify-between gap-10 py-12 md:flex-row md:gap-6">
 			<section class="order-2 flex flex-col gap-4 md:order-1">
