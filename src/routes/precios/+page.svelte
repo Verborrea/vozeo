@@ -240,6 +240,105 @@
 			why: 'Garantiza que el bot siempre dé la mejor respuesta disponible, no solo la primera que encuentra.',
 			growth: '✓ Estándar',
 			elite: '✓ GPT-4o'
+		},
+		{
+			title: '📄 Chunking Inteligente',
+			what: 'División inteligente de documentos grandes en fragmentos que mantienen sentido completo.',
+			why: 'Permite al bot procesar manuales, catálogos y documentos extensos sin perder contexto ni dar respuestas incompletas.',
+			growth: '2048 tokens',
+			elite: 'Dinámico'
+		},
+		{
+			title: '✅ Umbral de Confianza',
+			what: 'Sistema que mide qué tan seguro está el bot de su respuesta antes de enviarla.',
+			why: 'Evita que el bot "invente" respuestas. Si no está seguro, pide aclaraciones o deriva a un humano, protegiendo tu reputación.',
+			start: '50% fijo',
+			growth: 'Ajustable',
+			elite: 'ML adaptativo'
+		},
+		{
+			title: '🔌 Function Calling',
+			what: 'Capacidad del bot para conectarse y ejecutar acciones en otros sistemas (CRM, inventario, pagos).',
+			why: 'El bot puede consultar stock, crear pedidos, agendar citas o verificar pagos en tiempo real sin intervención humana.',
+			growth: '3 APIs',
+			elite: 'Ilimitado + Custom'
+		},
+		{
+			title: '🧠 Planner Multi-Agente',
+			what: 'Sistema que descompone tareas complejas en pasos simples que el bot ejecuta secuencialmente.',
+			why: 'Permite al bot manejar procesos complejos como "cambiar pedido y reprogramar envío" ejecutando cada paso correctamente.',
+			growth: '5 pasos',
+			elite: 'Ilimitado'
+		},
+		{
+			title: '💭 Memoria Dual Persistente',
+			what: 'Sistema de memoria que recuerda preferencias del cliente (semántica) y conversaciones anteriores (episódica).',
+			why: 'El bot recuerda a cada cliente, sus compras anteriores, preferencias y problemas resueltos, creando una experiencia personalizada.',
+			start: '48 horas',
+			growth: '30 días',
+			elite: 'Permanente'
+		},
+		{
+			title: '🛡️ Self-Check Multi-Layer',
+			what: 'Sistema de verificación que revisa cada respuesta antes de enviarla (gramática, tono, políticas, seguridad).',
+			why: 'Garantiza que cada mensaje sea profesional, correcto y alineado con tu marca, evitando errores costosos.',
+			start: '2 capas',
+			growth: '4 capas',
+			elite: '5 capas + Custom'
+		},
+		{
+			title: '🚦 Guardrails Adaptativos',
+			what: 'Barreras de seguridad que previenen comportamientos no deseados del bot.',
+			why: 'Protege información sensible, evita promesas que no puedes cumplir y mantiene conversaciones dentro de límites seguros.',
+			start: 'Templates',
+			growth: 'Customizable',
+			elite: 'AI-Powered'
+		},
+		{
+			title: '📊 Observabilidad Total',
+			what: 'Sistema completo de monitoreo que rastrea cada interacción, métrica y resultado.',
+			why: 'Ves en tiempo real qué funciona, dónde hay problemas y cómo mejorar, con dashboards ejecutivos claros.',
+			start: 'Básica',
+			growth: 'Completa',
+			elite: 'Predictiva + Alertas'
+		},
+		{
+			title: '🎭 Personalidades Dinámicas',
+			what: 'Diferentes "personalidades" del bot según contexto (formal para B2B, amigable para B2C, técnica para soporte).',
+			why: 'El bot adapta automáticamente su tono y estilo según el cliente, creando conexiones más naturales y efectivas.',
+			start: '1 fija',
+			growth: '3 switchables',
+			elite: 'Ilimitadas + A/B'
+		},
+		{
+			title: '🔄 Continuous Learning',
+			what: 'Sistema que mejora automáticamente basándose en cada interacción y feedback.',
+			why: 'El bot se vuelve más inteligente con el tiempo, aprendiendo de errores y mejorando respuestas sin intervención manual.',
+			growth: 'Manual',
+			elite: 'Automático'
+		},
+		{
+			title: '🌐 Gestión Multicanal',
+			what: 'Capacidad de gestionar todas las redes sociales y canales de comunicación desde un solo lugar.',
+			why: 'No más cambiar entre WhatsApp, Instagram, Facebook, Email. Todo centralizado, sin perder ningún mensaje.',
+			start: 'WhatsApp + Email',
+			growth: 'Todas las redes',
+			elite: '+ Custom channels'
+		},
+		{
+			title: '📈 Lead Scoring & Nurturing',
+			what: 'Sistema que califica automáticamente qué tan "caliente" está cada lead y los nutre hasta la venta.',
+			why: 'Prioriza los leads más prometedores y mantiene a los tibios en proceso automático hasta que estén listos para comprar.',
+			growth: 'Básico',
+			elite: 'IA Predictiva'
+		},
+		{
+			title: '🎯 Campañas Automatizadas',
+			what: 'Secuencias de marketing que se ejecutan solas según comportamiento del cliente.',
+			why: 'Carrito abandonado, cumpleaños, recompra, onboarding — todo automatizado sin que tengas que hacer nada.',
+			start: '2 flujos',
+			growth: '10 flujos',
+			elite: 'Ilimitados'
 		}
 	];
 </script>

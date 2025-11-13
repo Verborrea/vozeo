@@ -1,5 +1,5 @@
 <script>
-	let { title, what, why, smart = '', growth = '', elite = '' } = $props();
+	let { title, what, why, start = '', growth = '', elite = '' } = $props();
 </script>
 
 <article
@@ -12,8 +12,8 @@
 		{why}
 	</p>
 	<p class="flex w-full flex-wrap gap-1.5 text-sm">
-		{#if smart}
-			<span class="tag tag-blue">Start: {smart}</span>
+		{#if start}
+			<span class="tag tag-blue">Start: {start}</span>
 		{:else}
 			<span class="tag tag-disabled">Start: ❌</span>
 		{/if}
